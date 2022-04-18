@@ -1,9 +1,11 @@
 class TingoTango:
     def textoTingoTango(self, numero):
-        if (numero % 3 == 0) and (numero % 5 == 0):
-            return 'TingoTango'
+        mensaje = ''
         if (numero % 3 == 0):
-            return 'Tingo'
+            mensaje = 'Tingo'
         if (numero % 5 == 0):
-            return 'Tango'
-        return str(numero)
+            mensaje = 'Tango'
+        if (len(mensaje)):
+            return mensaje
+        else:
+            return str(numero)
