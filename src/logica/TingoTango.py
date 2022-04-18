@@ -1,8 +1,9 @@
 class TingoTango:
-    def TingoTango(self, numero):
-        if (numero % 15 == 0):
+    def textoTingoTango(self, numero):
+        if (numero % 3 == 0) and (numero % 5 == 0):
             return 'TingoTango'
-        elif (numero % 3 == 0):
+        if (numero % 3 == 0):
             return 'Tingo'
-        elif (numero % 5 == 0):
+        if (numero % 5 == 0):
             return 'Tango'
+        return str(numero)

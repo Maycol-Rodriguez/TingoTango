@@ -19,7 +19,7 @@ class TingoTangoPrueba(unittest.TestCase):
         # Assert
         self.assertEqual(self.resultadoEsperado, self.resultadoActual)
 
-    def test_tingoTango_multiploCinco_retornaTingo(self):
+    def test_tingoTango_multiploCinco_retornaTango(self):
         # Arrange
         self.numero = 5
         self.resultadoEsperado = 'Tango'
@@ -30,7 +30,7 @@ class TingoTangoPrueba(unittest.TestCase):
         # Assert
         self.assertEqual(self.resultadoEsperado, self.resultadoActual)
 
-    def test_tingoTango_multiploQuince_retornaTingo(self):
+    def test_tingoTango_multiploQuince_retornaTingoTango(self):
         # Arrange
         self.numero = 15
         self.resultadoEsperado = 'TingoTango'
@@ -38,5 +38,14 @@ class TingoTangoPrueba(unittest.TestCase):
         # Do
         self.resultadoActual = self.TT.textoTingoTango(self.numero)
 
+        # Assert
+        self.assertEqual(self.resultadoEsperado, self.resultadoActual)
+
+    def test_tingoTango_otroNumero_retornaNumero(self):
+        # Arrange
+        self.numero = 7
+        self.resultadoEsperado = "7"
+        # Do
+        self.resultadoActual = self.TT.textoTingoTango(self.numero)
         # Assert
         self.assertEqual(self.resultadoEsperado, self.resultadoActual)
