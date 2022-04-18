@@ -18,3 +18,14 @@ class TingoTangoPrueba(unittest.TestCase):
 
         # Assert
         self.assertEqual(self.resultadoEsperado, self.resultadoActual)
+
+    def test_tingoTango_multiploTres_retornaTingo(self):
+        # Arrange
+        self.numero = 5
+        self.resultadoEsperado = 'Tango'
+
+        # Do
+        self.resultadoActual = self.TT.textoTingoTango(self.numero)
+
+        # Assert
+        self.assertEqual(self.resultadoEsperado, self.resultadoActual)
